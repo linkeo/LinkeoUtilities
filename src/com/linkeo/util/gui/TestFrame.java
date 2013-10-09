@@ -33,6 +33,7 @@ public class TestFrame extends JFrame implements MouseListener{
 		p.setLayout(null);
 		p.add(comp);
 		comp.setLocation(PADDING, PADDING);
+		DragMoveListener.bind(this);
 		setUndecorated(true);
 		setVisible(true);
 		setLocationRelativeTo(null);
